@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C程序</title>
+    <link rel="stylesheet" href="c.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="container_nav">
+        <div class="nav">
+            <ul>
+                <li><a href="#mainbody">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#link">联系我们</a></li>
+                <li><a href="index.html#photo">相关作品</a></li>
+                <li><a href="#">C程序</a></li>
+                <li><a href="">个人收藏</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="container_div">
+            <div class="container_num">
+                <div class="num">
+                    1
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic_top">
+                    <ul>
+                        <li>浏览次数:58</li>
+                        <li>更新于:7小时前</li>
+                    </ul>
+                </div>
+                <div class="topic_mid">
+                    <button
+                        onclick="document.getElementById('container_code').style.display='block'" class="container_code1">
+                    <span>第二章:C#基本语法</span></button>
+                </div>
+                <div class="topic_bottom">
+                    <ul>
+                        <li>给我点个赞 <a href=""><i class="fa fa-thumbs-o-up"></i></a></li>
+                        <li><a href="#">已有18人评论</a></li>
+                        <li><a href="">查看评论</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topic_end">
+
+            </div>
+
+            <div id="container_code" class="container_code1">
+                <div class="container_inner">
+                    <pre>
+                        <span class="red_code">using</span> System;
+                        <span class="red_code">using</span> System.Collections.Generic;
+                        <span class="red_code">using</span> System.Linq;
+                        <span class="red_code">using</span> System.Text;
+                        <span class="red_code">using</span> System.Threading.Tasks;
+                        <span class="green_code">//编写一个猜数字游戏</span>
+                        <span class="red_code">namespace</span> guessNum
+                        {
+                            <span class="blue_code">class</span> Program
+                                {
+                                <span class="red_code">static</span> <span class="blue_code">void</span> Main(<span class="red_code">string</span>[] args)
+                                    {
+                                    Random randomNum = <span class="red_code">new</span> Random();<span class="green_code">//声明一个新对象</span>
+                                    <span class="blue_code">int</span> rightNum = randomNum.Next(<span class="pur_code">1</span>,<span class="pur_code">100</span>);<span class="green_code">//产生一个1到100的随机数</span>
+
+                                    <span class="red_code">int</span> count = <span class="pur_code">1</span>;<span class="green_code">//计数器</span>
+                                    <span class="red_code">do</span>
+                                        {
+                                        Console.WriteLine("<span class="yel_code">请输入您猜的数字（1—100）</span>");
+                                        <span class="red_code">int</span> guessNum = <span class="red_code">int</span>.Parse(Console.ReadLine());<span class="green_code">//获取用户输入的值</span>
+
+
+                                        <span class="red_code">if</span> (guessNum == rightNum)
+                                            {
+                                            Console.WriteLine("<span class="yel_code">太棒了，您猜对了！正确的数就是{0}</span>", rightNum);
+                                            <span class="red_code">break</span>;
+                                            }
+                                        <span class="red_code">else if</span> (guessNum < rightNum)
+                                            {
+                                            Console.WriteLine("<span class="yel_code">很抱歉，您猜的数小了，请继续努力哦！</span>");
+                                            }
+                                        <span class="red_code">else</span>
+                                            {
+                                            Console.WriteLine("<span class="yel_code">很抱歉，您猜的数大了，请继续努力哦！</span>");
+                                            }
+                                            count++;
+                                        } while (count <= <span class="pur_code">3</span>);
+                                    Console.WriteLine("<span class="yel_code">很抱歉，您已经三次未猜中正确数字了.</span>");
+                                    Console.WriteLine("<span class="yel_code">正确的数字是{0}</span>", rightNum);
+
+
+
+                                    }
+                                }
+                        }
+                    </pre>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="container_div">
+            <div class="container_num">
+                <div class="num">
+                    2
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic_top">
+                    <ul>
+                        <li>浏览次数:58</li>
+                        <li>更新于:7小时前</li>
+                    </ul>
+                </div>
+                <div class="topic_mid">
+                    <button
+                            onclick="document.getElementById('container_code').style.display='block'" class="container_code1">
+                        <span>第五章:指针和数组</span></button>
+                </div>
+                <div class="topic_bottom">
+                    <ul>
+                        <li>给我点个赞 <a href=""><i class="fa fa-thumbs-o-up"></i></a></li>
+                        <li><a href="#">已有18人评论</a></li>
+                        <li><a href="">查看评论</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topic_end">
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container_div">
+            <div class="container_num">
+                <div class="num">
+                    3
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic_top">
+                    <ul>
+                        <li>浏览次数:58</li>
+                        <li>更新于:7小时前</li>
+                    </ul>
+                </div>
+                <div class="topic_mid">
+                    <button
+                            onclick="document.getElementById('container_code').style.display='block'" class="container_code1">
+                        <span>第五章:指针和数组</span></button>
+                </div>
+                <div class="topic_bottom">
+                    <ul>
+                        <li>给我点个赞 <a href=""><i class="fa fa-thumbs-o-up"></i></a></li>
+                        <li><a href="#">已有18人评论</a></li>
+                        <li><a href="">查看评论</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topic_end">
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container_div">
+            <div class="container_num">
+                <div class="num">
+                    4
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic_top">
+                    <ul>
+                        <li>浏览次数:58</li>
+                        <li>更新于:7小时前</li>
+                    </ul>
+                </div>
+                <div class="topic_mid">
+                    <button
+                            onclick="document.getElementById('container_code').style.display='block'" class="container_code1">
+                        <span>第五章:指针和数组</span></button>
+                </div>
+                <div class="topic_bottom">
+                    <ul>
+                        <li>给我点个赞 <a href=""><i class="fa fa-thumbs-o-up"></i></a></li>
+                        <li><a href="#">已有18人评论</a></li>
+                        <li><a href="">查看评论</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topic_end">
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container_div">
+            <div class="container_num">
+                <div class="num">
+                    5
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic_top">
+                    <ul>
+                        <li>浏览次数:58</li>
+                        <li>更新于:7小时前</li>
+                    </ul>
+                </div>
+                <div class="topic_mid">
+                    <button
+                            onclick="document.getElementById('container_code').style.display='block'" class="container_code1">
+                        <span>第五章:指针和数组</span></button>
+                </div>
+                <div class="topic_bottom">
+                    <ul>
+                        <li>给我点个赞 <a href=""><i class="fa fa-thumbs-o-up"></i></a></li>
+                        <li><a href="#">已有18人评论</a></li>
+                        <li><a href="">查看评论</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topic_end">
+
+            </div>
+
+
+        </div>
+
+        <div class="container_div">
+            <div class="container_num">
+                <div class="num">
+                    6
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic_top">
+                    <ul>
+                        <li>浏览次数:58</li>
+                        <li>更新于:7小时前</li>
+                    </ul>
+                </div>
+                <div class="topic_mid">
+                    <button
+                            onclick="document.getElementById('container_code').style.display='block'" class="container_code1">
+                        <span>第五章:指针和数组</span></button>
+                </div>
+                <div class="topic_bottom">
+                    <ul>
+                        <li>给我点个赞 <a href=""><i class="fa fa-thumbs-o-up"></i></a></li>
+                        <li><a href="#">已有18人评论</a></li>
+                        <li><a href="">查看评论</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topic_end">
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</div>
+<div class="container1">
+
+</div>
+</body>
+</html>
